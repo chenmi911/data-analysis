@@ -8,6 +8,12 @@
 
 项目路径：[projects/world-happiness-report](projects/world-happiness-report)
 
+学习文档：
+
+- [项目说明与结论](projects/world-happiness-report/README.md)
+- [分析过程说明](projects/world-happiness-report/docs/analysis_process.md)
+- [Python 代码逐段讲解](projects/world-happiness-report/docs/code_walkthrough.md)
+
 业务场景：模拟咨询公司或国际业务部门的海外市场环境评估。分析目标不是做预测，而是回答：
 
 - 哪些国家和地区幸福指数更高？

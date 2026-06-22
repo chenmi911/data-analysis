@@ -53,9 +53,15 @@ projects/world-happiness-report/
   data/raw/
   src/analysis_world_happiness.py
   docs/analysis_process.md
+  docs/code_walkthrough.md
   outputs/tables/
   outputs/figures/
 ```
+
+## 学习文档
+
+- [分析过程说明](docs/analysis_process.md)：解释为什么这样分析，重点是业务逻辑和分析顺序。
+- [代码逐段讲解](docs/code_walkthrough.md)：解释 Python 脚本每个模块、函数和关键语句的作用。
 
 ## 运行方式
 
