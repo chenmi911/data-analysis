@@ -1,0 +1,48 @@
+﻿year,file,raw_column,standard_column
+2015,2015.csv,Country,country
+2015,2015.csv,Region,region
+2015,2015.csv,Happiness Rank,rank
+2015,2015.csv,Happiness Score,score
+2015,2015.csv,Economy (GDP per Capita),gdp
+2015,2015.csv,Family,social_support
+2015,2015.csv,Health (Life Expectancy),life_expectancy
+2015,2015.csv,Freedom,freedom
+2015,2015.csv,Trust (Government Corruption),corruption
+2015,2015.csv,Generosity,generosity
+2016,2016.csv,Country,country
+2016,2016.csv,Region,region
+2016,2016.csv,Happiness Rank,rank
+2016,2016.csv,Happiness Score,score
+2016,2016.csv,Economy (GDP per Capita),gdp
+2016,2016.csv,Family,social_support
+2016,2016.csv,Health (Life Expectancy),life_expectancy
+2016,2016.csv,Freedom,freedom
+2016,2016.csv,Trust (Government Corruption),corruption
+2016,2016.csv,Generosity,generosity
+2017,2017.csv,Country,country
+2017,2017.csv,Happiness.Rank,rank
+2017,2017.csv,Happiness.Score,score
+2017,2017.csv,Economy..GDP.per.Capita.,gdp
+2017,2017.csv,Family,social_support
+2017,2017.csv,Health..Life.Expectancy.,life_expectancy
+2017,2017.csv,Freedom,freedom
+2017,2017.csv,Generosity,generosity
+2017,2017.csv,Trust..Government.Corruption.,corruption
+2018,2018.csv,Overall rank,rank
+2018,2018.csv,Country or region,country
+2018,2018.csv,Score,score
+2018,2018.csv,GDP per capita,gdp
+2018,2018.csv,Social support,social_support
+2018,2018.csv,Healthy life expectancy,life_expectancy
+2018,2018.csv,Freedom to make life choices,freedom
+2018,2018.csv,Generosity,generosity
+2018,2018.csv,Perceptions of corruption,corruption
+2019,2019.csv,Overall rank,rank
+2019,2019.csv,Country or region,country
+2019,2019.csv,Score,score
+2019,2019.csv,GDP per capita,gdp
+2019,2019.csv,Social support,social_support
+2019,2019.csv,Healthy life expectancy,life_expectancy
+2019,2019.csv,Freedom to make life choices,freedom
+2019,2019.csv,Generosity,generosity
+2019,2019.csv,Perceptions of corruption,corruption

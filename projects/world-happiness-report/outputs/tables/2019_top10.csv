@@ -1,0 +1,11 @@
+﻿rank,country,region,score,gdp,social_support,life_expectancy,freedom,generosity,corruption
+1,Finland,Western Europe,7.769,1.34,1.587,0.986,0.596,0.153,0.393
+2,Denmark,Western Europe,7.6,1.383,1.573,0.996,0.592,0.252,0.41
+3,Norway,Western Europe,7.554,1.488,1.582,1.028,0.603,0.271,0.341
+4,Iceland,Western Europe,7.494,1.38,1.624,1.026,0.591,0.354,0.118
+5,Netherlands,Western Europe,7.488,1.396,1.522,0.999,0.557,0.322,0.298
+6,Switzerland,Western Europe,7.48,1.452,1.526,1.052,0.572,0.263,0.343
+7,Sweden,Western Europe,7.343,1.387,1.487,1.009,0.574,0.267,0.373
+8,New Zealand,Australia and New Zealand,7.307,1.303,1.557,1.026,0.585,0.33,0.38
+9,Canada,North America,7.278,1.365,1.505,1.039,0.584,0.285,0.308
+10,Austria,Western Europe,7.246,1.376,1.475,1.016,0.532,0.244,0.226

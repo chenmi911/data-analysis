@@ -1,0 +1,11 @@
+﻿rank,country,region,score,gdp,social_support,life_expectancy,freedom,generosity,corruption
+156,South Sudan,Sub-Saharan Africa,2.853,0.306,0.575,0.295,0.01,0.202,0.091
+155,Central African Republic,Sub-Saharan Africa,3.083,0.026,0.0,0.105,0.225,0.235,0.035
+154,Afghanistan,Southern Asia,3.203,0.35,0.517,0.361,0.0,0.158,0.025
+153,Tanzania,Sub-Saharan Africa,3.231,0.476,0.885,0.499,0.417,0.276,0.147
+152,Rwanda,Sub-Saharan Africa,3.334,0.359,0.711,0.614,0.555,0.217,0.411
+151,Yemen,Middle East and Northern Africa,3.38,0.287,1.163,0.463,0.143,0.108,0.077
+150,Malawi,Sub-Saharan Africa,3.41,0.191,0.56,0.495,0.443,0.218,0.089
+149,Syria,Middle East and Northern Africa,3.462,0.619,0.378,0.44,0.013,0.331,0.141
+148,Botswana,Sub-Saharan Africa,3.488,1.041,1.145,0.538,0.455,0.025,0.1
+147,Haiti,Latin America and Caribbean,3.597,0.323,0.688,0.449,0.026,0.419,0.11
