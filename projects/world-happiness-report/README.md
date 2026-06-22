@@ -72,6 +72,11 @@ data/raw/
 projects/world-happiness-report/
   README.md
   data/raw/
+  etl.py
+  analyse.py
+  analyse.sql
+  visualize.py
+  run_all.py
   src/analysis_world_happiness.py
   docs/analysis_process.md
   docs/code_walkthrough.md
@@ -90,10 +95,27 @@ projects/world-happiness-report/
 
 ```powershell
 pip install -r requirements.txt
-python projects/world-happiness-report/src/analysis_world_happiness.py
+python projects/world-happiness-report/run_all.py
 ```
 
 脚本会重新生成 `outputs/tables/` 和 `outputs/figures/` 下的所有分析结果。
+
+兼容入口仍然保留：
+
+```powershell
+python projects/world-happiness-report/src/analysis_world_happiness.py
+```
+
+## 代码分工
+
+| 文件 | 作用 |
+|---|---|
+| `etl.py` | 读取 5 个原始 CSV，统一字段，补齐地区，保存清洗表和 SQLite 表 |
+| `analyse.py` | 生成缺失值、Top/Bottom、地区汇总、变化分析、相关性等结果表 |
+| `analyse.sql` | 保留可复用的 SQL 分析口径，方便迁移到数据库环境 |
+| `visualize.py` | 读取分析表并生成 4 张图表 |
+| `run_all.py` | 串联 ETL、分析、可视化的主入口 |
+| `src/analysis_world_happiness.py` | 兼容旧入口，内部调用 `run_all.py` |
 
 ## 数据质量结果
 

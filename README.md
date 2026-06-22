@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Cleaning%20%26%20EDA-150458?logo=pandas&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557C)
-![SQL](https://img.shields.io/badge/SQL-Coming%20Next-4169E1)
+![SQL](https://img.shields.io/badge/SQL-Analysis-4169E1)
 ![Business Analytics](https://img.shields.io/badge/Business%20Analytics-Portfolio-FF8C00)
 ![Beginner Friendly](https://img.shields.io/badge/Beginner--Friendly-Code%20Walkthrough-6A5ACD)
 [![CodeTriage](https://img.shields.io/badge/CodeTriage-open%20source%20helpers-2ea44f)](https://www.codetriage.com/chenmi911/data-analysis)
@@ -42,7 +42,7 @@
 
 | 主题 | 处理方式 | 技术栈 | 项目入口 | 数据 |
 |---|---|---|---|---|
-| World Happiness Report 幸福指数分析 | 离线处理：字段统一 + 清洗 + EDA + 可视化 + 结论输出 | pandas + matplotlib + markdown | [项目说明](projects/world-happiness-report/README.md) / [代码讲解](projects/world-happiness-report/docs/code_walkthrough.md) | [raw csv](projects/world-happiness-report/data/raw) |
+| World Happiness Report 幸福指数分析 | 离线处理：ETL + SQL 分析 + EDA + 可视化 + 结论输出 | pandas + sqlite + matplotlib + markdown | [项目说明](projects/world-happiness-report/README.md) / [代码讲解](projects/world-happiness-report/docs/code_walkthrough.md) | [raw csv](projects/world-happiness-report/data/raw) |
 | Superstore 销售与利润分析 | 计划中：销售、利润、地区、品类、客户分层、经营看板 | pandas + SQL + Power BI | Coming soon | Coming soon |
 | 用户增长与留存分析 | 计划中：新增、活跃、留存、漏斗、转化诊断 | pandas + SQL + cohort analysis | Coming soon | Coming soon |
 | 营销活动效果评估 | 计划中：活动前后对比、ROI、分组表现、异常排查 | pandas + SQL + visualization | Coming soon | Coming soon |
@@ -88,7 +88,7 @@
 
 ```powershell
 pip install -r requirements.txt
-python projects/world-happiness-report/src/analysis_world_happiness.py
+python projects/world-happiness-report/run_all.py
 ```
 
 运行后会重新生成：
