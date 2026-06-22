@@ -1,10 +1,31 @@
 # World Happiness Report 数据分析项目
 
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-Cleaning%20%26%20EDA-150458?logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Charts-11557C)
+![Data Cleaning](https://img.shields.io/badge/Data%20Cleaning-Schema%20Normalization-2E8B57)
+![Portfolio](https://img.shields.io/badge/Portfolio-Data%20Analysis-FF8C00)
+
 ## 项目定位
 
 这个项目使用 2015-2019 年 World Happiness Report 数据，模拟一个咨询公司或国际业务部门的海外市场环境评估任务。
 
 它不是一个机器学习项目。当前训练重点是企业数据分析中更基础也更常用的能力：字段口径统一、数据质量检查、分组对比、趋势分析、变化分析、相关性分析、图表表达和业务结论输出。
+
+## 项目亮点
+
+| 亮点 | 对应能力 |
+|---|---|
+| 多年份 CSV 合并 | 真实工作中常见的多期报表处理 |
+| 字段口径统一 | 解决不同年份字段名不一致的问题 |
+| 数据质量检查 | 缺失值、重复值、行列数、国家数量核验 |
+| 业务化问题拆解 | 从“看数据”转为回答具体分析问题 |
+| 图表支撑结论 | 每张图都对应一个明确业务问题 |
+| 代码逐段讲解 | 适合初学者复写和放入作品集 |
+
+## Keywords
+
+`Python` `Pandas` `Matplotlib` `EDA` `Data Cleaning` `Data Visualization` `Correlation Analysis` `Trend Analysis` `Business Analytics` `Portfolio Project` `World Happiness Report`
 
 ## 业务问题
 
