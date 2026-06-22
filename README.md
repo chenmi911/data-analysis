@@ -1,73 +1,66 @@
-# 数据分析项目集 | Data Analysis Portfolio
+# data-analysis
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Cleaning%20%26%20EDA-150458?logo=pandas&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557C)
-![EDA](https://img.shields.io/badge/EDA-Exploratory%20Data%20Analysis-2E8B57)
-![Business Analytics](https://img.shields.io/badge/Business%20Analytics-Portfolio%20Project-FF8C00)
+![SQL](https://img.shields.io/badge/SQL-Coming%20Next-4169E1)
+![Business Analytics](https://img.shields.io/badge/Business%20Analytics-Portfolio-FF8C00)
 ![Beginner Friendly](https://img.shields.io/badge/Beginner--Friendly-Code%20Walkthrough-6A5ACD)
 
-> 一个面向数据分析岗位学习与作品集展示的 Python 项目仓库。当前项目以 World Happiness Report 为例，完整覆盖数据清洗、字段口径统一、数据质量检查、分组对比、趋势分析、相关性分析、可视化表达和结论输出。
+该 repo 是我的数据分析项目集合。每个项目会尽量包含清晰的业务背景、数据说明、分析流程、可复现代码、图表结果和复盘文档，用来训练真实数据分析工作中常见的能力。
 
-如果这个项目对你的数据分析学习、作品集搭建或 Python EDA 练习有帮助，可以给一个 Star，后续会继续补充更多业务场景项目。
+当前项目从 World Happiness Report 开始，后续会继续补充销售分析、用户增长分析、利润分析、客户分层、留存分析、营销活动评估、库存与供应链分析、经营看板和异常诊断等更接近企业场景的案例。
 
-## Tags
+如果这个仓库对你的数据分析学习、Python EDA 练习或作品集搭建有参考价值，可以给一个 Star。
 
-`Python` `Pandas` `Matplotlib` `Data Analysis` `Exploratory Data Analysis` `EDA` `Data Visualization` `Business Analytics` `Portfolio Project` `CSV Analysis` `Data Cleaning` `World Happiness Report` `Beginner Friendly` `Analytics Portfolio`
+## wish
 
-## 为什么值得 Star
+通过不同数据集和业务场景的练习，逐步达到以下目标：
 
-| 亮点 | 说明 |
-|---|---|
-| 可复现 | 从原始 CSV 到清洗表、分析结果、图表全部由脚本生成 |
-| 有业务场景 | 不只是画图，模拟海外市场环境评估的分析任务 |
-| 有详细讲解 | 提供项目说明、分析过程、代码逐段讲解 |
-| 适合初学者 | 每一步都有明确目的，适合跟着复写 |
-| 可放作品集 | README、图表、输出表和项目结构都按展示型仓库整理 |
+* 熟悉企业数据分析的基本工作流：取数、清洗、分析、可视化、结论输出。
+* 理解不同业务场景的核心指标，例如销售额、利润率、转化率、留存率、库存周转、ROI。
+* 提升 Python、pandas、SQL、可视化和报告写作能力。
+* 训练从“数据现象”到“业务解释”再到“行动建议”的分析思维。
+* 积累可以展示给实习、校招或项目面试的作品集。
 
-## 推荐 GitHub Topics
+## tip
 
-如果要在仓库 About 区域添加 topics，建议使用：
+* 目前主要使用 Python、pandas、matplotlib 和 Markdown。
+* 每个项目都会尽量保留原始数据、清洗后数据、分析脚本、图表输出和详细说明。
+* 项目重点不是堆模型，而是先把数据清洗、指标口径、分析过程和结论边界讲清楚。
+* 当前阶段更适合练 EDA、业务拆解和可视化；机器学习会在合适的数据集上再加入。
 
-```text
-python
-pandas
-matplotlib
-data-analysis
-data-visualization
-exploratory-data-analysis
-business-analytics
-analytics-portfolio
-portfolio-project
-world-happiness-report
-csv-analysis
-data-cleaning
-data-storytelling
-beginner-friendly
-open-data
-```
+> 数据分析项目最重要的不是“图多”，而是每一步都能回答一个明确问题：为什么要处理这个字段、为什么这样分组、这个图支撑什么结论、结论能不能落地。
 
-## 当前项目
+## list
+
+| 主题 | 处理方式 | 技术栈 | 项目入口 | 数据 |
+|---|---|---|---|---|
+| World Happiness Report 幸福指数分析 | 离线处理：字段统一 + 清洗 + EDA + 可视化 + 结论输出 | pandas + matplotlib + markdown | [项目说明](projects/world-happiness-report/README.md) / [代码讲解](projects/world-happiness-report/docs/code_walkthrough.md) | [raw csv](projects/world-happiness-report/data/raw) |
+| Superstore 销售与利润分析 | 计划中：销售、利润、地区、品类、客户分层、经营看板 | pandas + SQL + Power BI | Coming soon | Coming soon |
+| 用户增长与留存分析 | 计划中：新增、活跃、留存、漏斗、转化诊断 | pandas + SQL + cohort analysis | Coming soon | Coming soon |
+| 营销活动效果评估 | 计划中：活动前后对比、ROI、分组表现、异常排查 | pandas + SQL + visualization | Coming soon | Coming soon |
+| 库存与供应链分析 | 计划中：周转、缺货、滞销、补货建议 | pandas + SQL + dashboard | Coming soon | Coming soon |
+
+## current project
 
 ### World Happiness Report 分析
 
-项目路径：[projects/world-happiness-report](projects/world-happiness-report)
+业务场景：模拟咨询公司或国际业务部门的海外市场环境评估。分析目标不是做预测，而是回答：
+
+* 哪些国家和地区幸福指数更高？
+* 2015-2019 年哪些国家变化最明显？
+* 地区之间是否存在明显差异？
+* GDP、社会支持、健康预期寿命等指标与幸福分数的关系如何？
+* 这些结果能为海外市场研究提供哪些参考？
 
 学习文档：
 
-- [项目说明与结论](projects/world-happiness-report/README.md)
-- [分析过程说明](projects/world-happiness-report/docs/analysis_process.md)
-- [Python 代码逐段讲解](projects/world-happiness-report/docs/code_walkthrough.md)
+* [项目说明与结论](projects/world-happiness-report/README.md)
+* [分析过程说明](projects/world-happiness-report/docs/analysis_process.md)
+* [Python 代码逐段讲解](projects/world-happiness-report/docs/code_walkthrough.md)
 
-业务场景：模拟咨询公司或国际业务部门的海外市场环境评估。分析目标不是做预测，而是回答：
-
-- 哪些国家和地区幸福指数更高？
-- 2015-2019 年哪些国家变化最明显？
-- 地区之间是否存在明显差异？
-- GDP、社会支持、健康预期寿命等指标与幸福分数的关系如何？
-- 这些结果能为海外市场研究提供哪些参考？
-
-## 核心图表
+## preview
 
 ### 2019 年幸福指数 Top / Bottom
 
@@ -85,28 +78,7 @@ open-data
 
 ![Score vs Key Indicators](projects/world-happiness-report/outputs/figures/chart_2019_score_vs_key_indicators.png)
 
-## 方法框架
-
-| 环节 | 目的 | 本项目做法 |
-|---|---|---|
-| 数据读取 | 确认原始数据结构 | 读取 2015-2019 五个 CSV |
-| 字段统一 | 保证跨年可比 | 将不同年份字段映射为统一字段 |
-| 数据质量检查 | 避免错误结论 | 检查缺失值、重复国家年份、行列数 |
-| 描述性分析 | 快速理解整体格局 | Top/Bottom、年度均值、地区均值 |
-| 变化分析 | 识别变化明显国家 | 只比较 2015 和 2019 共同出现国家 |
-| 相关性分析 | 初步判断指标关系 | 计算各指标与幸福分数的相关系数 |
-| 可视化 | 支撑结论表达 | 输出 4 张分析图表 |
-
-## 关键结论
-
-- 2019 年幸福指数最高的是 Finland，最低的是 South Sudan。
-- 2015-2019 年共同国家中，幸福分数上升最多的是 Benin，下降最多的是 Venezuela。
-- 2019 年幸福分数与 GDP、健康预期寿命、社会支持的相关性较高。
-- 地区之间差异明显，Western Europe、North America、Australia and New Zealand 整体表现较高，Sub-Saharan Africa 整体较低。
-
-这些结论只能说明相关关系和分布差异，不能直接解释因果。数据是国家级聚合数据，样本量有限，并且部分解释变量本身就是幸福分数的组成维度，因此不适合直接作为严肃预测建模项目。
-
-## 运行方式
+## quick start
 
 ```powershell
 pip install -r requirements.txt
@@ -115,35 +87,49 @@ python projects/world-happiness-report/src/analysis_world_happiness.py
 
 运行后会重新生成：
 
-- 清洗后的长表
-- 数据质量检查表
-- Top / Bottom 国家表
-- 分数变化表
-- 地区汇总表
-- 相关性结果表
-- 4 张可视化图表
+* 清洗后的长表
+* 数据质量检查表
+* Top / Bottom 国家表
+* 分数变化表
+* 地区汇总表
+* 相关性结果表
+* 4 张可视化图表
 
-## 当前训练重点
+## skills
 
-这个项目对应数据分析基础能力，不是机器学习项目。重点能力包括：
+`Python` `pandas` `matplotlib` `SQL` `EDA` `data cleaning` `data visualization` `business analytics` `portfolio project` `CSV analysis` `correlation analysis` `trend analysis` `data storytelling`
 
-- 多文件数据合并
-- 跨年份字段口径统一
-- 缺失值和重复值检查
-- 排名分析
-- 趋势分析
-- 分组对比
-- 相关性分析
-- 图表支撑结论
-- 分析结论边界说明
+## recommended topics
 
-## Roadmap
+建议在 GitHub About 区域添加：
 
-后续计划继续补充更接近企业场景的数据分析项目：
+```text
+python
+pandas
+matplotlib
+sql
+data-analysis
+data-visualization
+exploratory-data-analysis
+business-analytics
+analytics-portfolio
+portfolio-project
+world-happiness-report
+csv-analysis
+data-cleaning
+data-storytelling
+beginner-friendly
+open-data
+```
 
-- Superstore 销售与利润分析
-- 用户增长与留存分析
-- 营销活动效果评估
-- 客户分层与 RFM 分析
-- 库存与供应链分析
-- 经营看板与异常指标诊断
+## refer
+
+> 1. [World Happiness Report](https://worldhappiness.report/)
+> 2. [World Happiness Report dataset on Kaggle](https://www.kaggle.com/datasets/unsdsn/world-happiness)
+> 3. [pandas documentation](https://pandas.pydata.org/docs/)
+> 4. [matplotlib documentation](https://matplotlib.org/stable/)
+> 5. [GitHub repository style reference: TurboWay/bigdata_analyse](https://github.com/TurboWay/bigdata_analyse)
+
+## license
+
+Code and documents in this repository are released under the MIT License. Raw datasets keep their original data source licenses and terms.
