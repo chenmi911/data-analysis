@@ -6,6 +6,7 @@
 ![SQL](https://img.shields.io/badge/SQL-Coming%20Next-4169E1)
 ![Business Analytics](https://img.shields.io/badge/Business%20Analytics-Portfolio-FF8C00)
 ![Beginner Friendly](https://img.shields.io/badge/Beginner--Friendly-Code%20Walkthrough-6A5ACD)
+[![CodeTriage](https://img.shields.io/badge/CodeTriage-open%20source%20helpers-2ea44f)](https://www.codetriage.com/chenmi911/data-analysis)
 
 该 repo 是我的数据分析项目集合。每个项目会尽量包含清晰的业务背景、数据说明、分析流程、可复现代码、图表结果和复盘文档，用来训练真实数据分析工作中常见的能力。
 
@@ -29,6 +30,11 @@
 * 每个项目都会尽量保留原始数据、清洗后数据、分析脚本、图表输出和详细说明。
 * 项目重点不是堆模型，而是先把数据清洗、指标口径、分析过程和结论边界讲清楚。
 * 当前阶段更适合练 EDA、业务拆解和可视化；机器学习会在合适的数据集上再加入。
+* CodeTriage 官方动态徽章需要仓库先被 CodeTriage 收录；当前可先使用顶部入口 badge，收录后替换为：
+
+```markdown
+[![Open Source Helpers](https://www.codetriage.com/chenmi911/data-analysis/badges/users.svg)](https://www.codetriage.com/chenmi911/data-analysis)
+```
 
 > 数据分析项目最重要的不是“图多”，而是每一步都能回答一个明确问题：为什么要处理这个字段、为什么这样分组、这个图支撑什么结论、结论能不能落地。
 
