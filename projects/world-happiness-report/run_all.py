@@ -2,16 +2,12 @@
 # -*- coding: utf-8 -*-
 # @Describe: 项目主入口
 
-from etl import main as run_etl
-from analyse import main as run_analyse
-from visualize import main as run_visualize
+from pathlib import Path
+import runpy
 
 
-def main() -> None:
-    run_etl()
-    run_analyse()
-    run_visualize()
+PROJECT_DIR = Path(__file__).resolve().parent
 
-
-if __name__ == "__main__":
-    main()
+runpy.run_path(str(PROJECT_DIR / "etl.py"), run_name="__main__")
+runpy.run_path(str(PROJECT_DIR / "analyse.py"), run_name="__main__")
+runpy.run_path(str(PROJECT_DIR / "visualize.py"), run_name="__main__")

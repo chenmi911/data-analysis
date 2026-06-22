@@ -74,7 +74,6 @@ projects/world-happiness-report/
   data/raw/
   etl.py
   analyse.py
-  analyse.sql
   visualize.py
   run_all.py
   src/analysis_world_happiness.py
@@ -87,7 +86,7 @@ projects/world-happiness-report/
 ## 学习文档
 
 - [分析过程说明](docs/analysis_process.md)：解释为什么这样分析，重点是业务逻辑和分析顺序。
-- [代码逐段讲解](docs/code_walkthrough.md)：解释 Python 脚本每个模块、函数和关键语句的作用。
+- [代码逐段讲解](docs/code_walkthrough.md)：解释 Python 顺序脚本每一步的作用。
 
 ## 运行方式
 
@@ -110,9 +109,8 @@ python projects/world-happiness-report/src/analysis_world_happiness.py
 
 | 文件 | 作用 |
 |---|---|
-| `etl.py` | 读取 5 个原始 CSV，统一字段，补齐地区，保存清洗表和 SQLite 表 |
+| `etl.py` | 读取 5 个原始 CSV，统一字段，补齐地区，保存清洗表 |
 | `analyse.py` | 生成缺失值、Top/Bottom、地区汇总、变化分析、相关性等结果表 |
-| `analyse.sql` | 保留可复用的 SQL 分析口径，方便迁移到数据库环境 |
 | `visualize.py` | 读取分析表并生成 4 张图表 |
 | `run_all.py` | 串联 ETL、分析、可视化的主入口 |
 | `src/analysis_world_happiness.py` | 兼容旧入口，内部调用 `run_all.py` |
