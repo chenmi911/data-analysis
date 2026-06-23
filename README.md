@@ -98,34 +98,6 @@ python projects/world-happiness-report/run_all.py
 * 相关性结果表
 * 4 张可视化图表
 
-## skills
-
-`Python` `pandas` `matplotlib` `MySQL` `SQL` `EDA` `data cleaning` `data visualization` `business analytics` `portfolio project` `CSV analysis` `correlation analysis` `trend analysis` `data storytelling`
-
-## recommended topics
-
-建议在 GitHub About 区域添加：
-
-```text
-python
-pandas
-matplotlib
-mysql
-sql
-data-analysis
-data-visualization
-exploratory-data-analysis
-business-analytics
-analytics-portfolio
-portfolio-project
-world-happiness-report
-csv-analysis
-data-cleaning
-data-storytelling
-beginner-friendly
-open-data
-```
-
 ## refer
 
 > 1. [World Happiness Report](https://worldhappiness.report/)
