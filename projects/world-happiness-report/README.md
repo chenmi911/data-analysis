@@ -9,24 +9,24 @@
 
 ## 项目定位
 
-这个项目使用 2015-2019 年 World Happiness Report 数据，模拟一个咨询公司或国际业务部门的海外市场环境评估任务。
+这个项目是我使用 2015-2019 年 World Happiness Report 数据做的一次数据分析学习记录。项目按一个完整流程组织：先用 Python/pandas 处理原始 CSV 的脏数据和字段口径问题，再用 MySQL 基于清洗后的标准表做分析查询，最后用 matplotlib 输出图表。
 
-它不是一个机器学习项目。当前训练重点是企业数据分析中更基础也更常用的能力：字段口径统一、数据质量检查、分组对比、趋势分析、变化分析、相关性分析、图表表达和业务结论输出。
+这次重点练的是企业数据分析中更基础也更常用的动作：字段口径统一、数据质量检查、分组对比、趋势分析、变化分析、相关性分析、图表表达和结论边界说明。
 
 ## 项目亮点
 
-| 亮点 | 对应能力 |
+| 亮点 | 我练习的内容 |
 |---|---|
 | 多年份 CSV 合并 | 真实工作中常见的多期报表处理 |
 | 字段口径统一 | 解决不同年份字段名不一致的问题 |
 | 数据质量检查 | 缺失值、重复值、行列数、国家数量核验 |
 | 业务化问题拆解 | 从“看数据”转为回答具体分析问题 |
 | 图表支撑结论 | 每张图都对应一个明确业务问题 |
-| 代码逐段讲解 | 适合初学者复写和放入作品集 |
+| 代码逐段讲解 | 方便我复盘清洗、分析和可视化流程 |
 
 ## Keywords
 
-`Python` `Pandas` `Matplotlib` `EDA` `Data Cleaning` `Data Visualization` `Correlation Analysis` `Trend Analysis` `Business Analytics` `Portfolio Project` `World Happiness Report`
+`Python` `Pandas` `MySQL` `SQL` `Matplotlib` `EDA` `Data Cleaning` `Data Visualization` `Correlation Analysis` `Trend Analysis` `Business Analytics` `World Happiness Report`
 
 ## 业务问题
 
@@ -89,8 +89,8 @@ projects/world-happiness-report/
 ## 学习文档
 
 - [分析过程说明](docs/analysis_process.md)：解释为什么这样分析，重点是业务逻辑和分析顺序。
-- [代码逐段讲解](docs/code_walkthrough.md)：解释 Python 顺序脚本每一步的作用。
-- [MySQL 分析练习](mysql/README.md)：基于清洗长表练习建表、导入、质量检查、排名、趋势、分组、相关性和异常诊断。
+- [代码逐段讲解](docs/code_walkthrough.md)：记录 Python 清洗、MySQL 分析和 Python 可视化的衔接过程。
+- [MySQL 分析记录](mysql/README.md)：记录我基于清洗长表完成建表、导入、质量检查、排名、趋势、分组、相关性和异常诊断的 SQL。
 
 ## 运行方式
 
@@ -113,12 +113,12 @@ python projects/world-happiness-report/src/analysis_world_happiness.py
 
 | 文件 | 作用 |
 |---|---|
-| `etl.py` | 读取 5 个原始 CSV，统一字段，补齐地区，保存清洗表 |
-| `analyse.py` | 生成缺失值、Top/Bottom、地区汇总、变化分析、相关性等结果表 |
+| `etl.py` | Python 清洗脏数据：读取 5 个原始 CSV，统一字段，补齐地区，保存清洗表 |
+| `analyse.py` | Python 生成图表所需的结果表，并保留关键校验 |
 | `visualize.py` | 读取分析表并生成 4 张图表 |
 | `run_all.py` | 串联 ETL、分析、可视化的主入口 |
 | `src/analysis_world_happiness.py` | 兼容旧入口，内部调用 `run_all.py` |
-| `mysql/world_happiness_mysql_analysis.sql` | MySQL 8.0 分析练习脚本，不参与 Python 主流程 |
+| `mysql/world_happiness_mysql_analysis.sql` | MySQL 分析脚本：质量检查、排名、趋势、分组、相关性和异常诊断 |
 
 ## 数据质量结果
 
@@ -209,6 +209,6 @@ python projects/world-happiness-report/src/analysis_world_happiness.py
 ## 分析边界
 
 - 本项目结论不能解释因果关系，只能说明相关关系和分布差异。
-- World Happiness 数据是国家级聚合数据，样本量较小，不适合做复杂机器学习。
+- World Happiness 数据是国家级聚合数据，样本量较小，地区均值和相关性结果都需要结合样本量解释。
 - 部分解释变量本身就是幸福分数的组成指标，直接建模容易变成用组成项预测总分。
 - 地区均值需要结合国家数解释，例如 North America 和 Australia and New Zealand 都只有 2 个国家样本。
