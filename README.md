@@ -8,15 +8,13 @@
 ![Beginner Friendly](https://img.shields.io/badge/Beginner--Friendly-Code%20Walkthrough-6A5ACD)
 [![CodeTriage](https://img.shields.io/badge/CodeTriage-open%20source%20helpers-2ea44f)](https://www.codetriage.com/chenmi911/data-analysis)
 
-该 repo 是我的数据分析项目集合。每个项目会尽量包含清晰的业务背景、数据说明、分析流程、可复现代码、图表结果和复盘文档，用来训练真实数据分析工作中常见的能力。
+该 repo 用来记录我的数据分析学习项目。当前整理的是 World Happiness Report 项目，重点记录从原始 CSV 到清洗表、SQL 分析、图表和结论的完整过程。
 
-当前项目从 World Happiness Report 开始，后续会继续补充销售分析、用户增长分析、利润分析、客户分层、留存分析、营销活动评估、库存与供应链分析、经营看板和异常诊断等更接近企业场景的案例。
-
-如果这个仓库对你的数据分析学习、Python EDA 练习或作品集搭建有参考价值，可以给一个 Star。
+这个项目的分工是：Python 处理原始数据里的字段不统一、缺失、跨年合并等脏数据问题；MySQL 基于清洗后的标准表做数据质量检查、排名、趋势、分组、变化和相关性分析；Python 再输出图表素材。
 
 ## wish
 
-通过不同数据集和业务场景的练习，逐步达到以下目标：
+当前阶段，我主要用这个项目练习以下能力：
 
 * 熟悉企业数据分析的基本工作流：取数、清洗、分析、可视化、结论输出。
 * 理解不同业务场景的核心指标，例如销售额、利润率、转化率、留存率、库存周转、ROI。
@@ -26,13 +24,12 @@
 
 ## tip
 
-* 目前主要使用 Python、pandas、matplotlib、MySQL 和 Markdown。
-* 每个项目都会尽量保留原始数据、清洗后数据、分析脚本、图表输出和详细说明。
-* 项目重点不是堆模型，而是先把数据清洗、指标口径、分析过程和结论边界讲清楚。
-* 当前阶段更适合练 EDA、业务拆解和可视化；机器学习会在合适的数据集上再加入。
+* 当前项目使用 Python、pandas、MySQL 和 matplotlib。
+* 我保留了原始数据、清洗后数据、Python 脚本、MySQL 脚本、图表输出和过程说明。
+* 项目重点不是堆方法，而是把数据清洗、指标口径、分析过程和结论边界讲清楚。
 * CodeTriage 官方动态徽章需要仓库先被 CodeTriage 收录；当前可先使用顶部入口 badge，收录后替换为：
 
-```markdown
+```text
 [![Open Source Helpers](https://www.codetriage.com/chenmi911/data-analysis/badges/users.svg)](https://www.codetriage.com/chenmi911/data-analysis)
 ```
 
@@ -42,7 +39,7 @@
 
 | 主题 | 处理方式 | 技术栈 | 项目入口 | 数据 |
 |---|---|---|---|---|
-| World Happiness Report 幸福指数分析 | 离线处理：ETL + EDA + 可视化 + 结论输出；附 MySQL 分析练习 | pandas + matplotlib + MySQL + markdown | [项目说明](projects/world-happiness-report/README.md) / [代码讲解](projects/world-happiness-report/docs/code_walkthrough.md) / [MySQL 练习](projects/world-happiness-report/mysql/README.md) | [raw csv](projects/world-happiness-report/data/raw) |
+| World Happiness Report 幸福指数分析 | Python 清洗脏数据 + MySQL 分析 + matplotlib 可视化 + 结论输出 | Python + pandas + MySQL + matplotlib | [项目说明](projects/world-happiness-report/README.md) / [代码讲解](projects/world-happiness-report/docs/code_walkthrough.md) / [MySQL 分析](projects/world-happiness-report/mysql/README.md) | [raw csv](projects/world-happiness-report/data/raw) |
 
 ## current project
 
@@ -61,7 +58,7 @@
 * [项目说明与结论](projects/world-happiness-report/README.md)
 * [分析过程说明](projects/world-happiness-report/docs/analysis_process.md)
 * [Python 代码逐段讲解](projects/world-happiness-report/docs/code_walkthrough.md)
-* [MySQL 分析练习](projects/world-happiness-report/mysql/README.md)
+* [MySQL 分析记录](projects/world-happiness-report/mysql/README.md)
 
 ## preview
 
@@ -97,6 +94,34 @@ python projects/world-happiness-report/run_all.py
 * 地区汇总表
 * 相关性结果表
 * 4 张可视化图表
+
+## skills
+
+`Python` `pandas` `matplotlib` `MySQL` `SQL` `EDA` `data cleaning` `data visualization` `business analytics` `portfolio project` `CSV analysis` `correlation analysis` `trend analysis` `data storytelling`
+
+## recommended topics
+
+当前仓库使用的 GitHub About topics：
+
+```text
+python
+pandas
+matplotlib
+mysql
+sql
+data-analysis
+data-visualization
+exploratory-data-analysis
+business-analytics
+analytics-portfolio
+portfolio-project
+world-happiness-report
+csv-analysis
+data-cleaning
+data-storytelling
+beginner-friendly
+open-data
+```
 
 ## refer
 
