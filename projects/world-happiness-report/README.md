@@ -3,6 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-Cleaning%20%26%20EDA-150458?logo=pandas&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Charts-11557C)
+![MySQL](https://img.shields.io/badge/MySQL-Analysis%20Practice-4479A1?logo=mysql&logoColor=white)
 ![Data Cleaning](https://img.shields.io/badge/Data%20Cleaning-Schema%20Normalization-2E8B57)
 ![Portfolio](https://img.shields.io/badge/Portfolio-Data%20Analysis-FF8C00)
 
@@ -79,6 +80,8 @@ projects/world-happiness-report/
   src/analysis_world_happiness.py
   docs/analysis_process.md
   docs/code_walkthrough.md
+  mysql/README.md
+  mysql/world_happiness_mysql_analysis.sql
   outputs/tables/
   outputs/figures/
 ```
@@ -87,6 +90,7 @@ projects/world-happiness-report/
 
 - [分析过程说明](docs/analysis_process.md)：解释为什么这样分析，重点是业务逻辑和分析顺序。
 - [代码逐段讲解](docs/code_walkthrough.md)：解释 Python 顺序脚本每一步的作用。
+- [MySQL 分析练习](mysql/README.md)：基于清洗长表练习建表、导入、质量检查、排名、趋势、分组、相关性和异常诊断。
 
 ## 运行方式
 
@@ -114,6 +118,7 @@ python projects/world-happiness-report/src/analysis_world_happiness.py
 | `visualize.py` | 读取分析表并生成 4 张图表 |
 | `run_all.py` | 串联 ETL、分析、可视化的主入口 |
 | `src/analysis_world_happiness.py` | 兼容旧入口，内部调用 `run_all.py` |
+| `mysql/world_happiness_mysql_analysis.sql` | MySQL 8.0 分析练习脚本，不参与 Python 主流程 |
 
 ## 数据质量结果
 
