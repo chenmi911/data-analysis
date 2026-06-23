@@ -72,9 +72,9 @@ clean["region"] = clean["region"].fillna(clean["country"].map(region_map))
 | 相关性分析 | 初步判断指标关系 |
 | 可视化 | 周报、月报、经营看板、管理层汇报 |
 
-## 7. 学习建议
+## 7. 我的复盘顺序
 
-不要只看最终结论。建议按这个顺序自己复现：
+我复盘这个项目时，按这个顺序重新走一遍：
 
 1. 读取每个 CSV，打印行数和字段。
 2. 写字段映射表。
@@ -83,5 +83,5 @@ clean["region"] = clean["region"].fillna(clean["country"].map(region_map))
 5. 做 2019 Top/Bottom。
 6. 做 2015-2019 共同国家变化。
 7. 做地区分组。
-8. 做相关性。
+8. 在 MySQL 里做质量检查、排名、趋势、分组、变化和相关性分析。
 9. 最后再画图和写结论。
