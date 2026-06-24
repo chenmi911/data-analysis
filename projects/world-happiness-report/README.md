@@ -91,6 +91,7 @@ projects/world-happiness-report/
 - [分析过程说明](docs/analysis_process.md)：解释为什么这样分析，重点是业务逻辑和分析顺序。
 - [代码逐段讲解](docs/code_walkthrough.md)：记录 Python 清洗、MySQL 分析和 Python 可视化的衔接过程。
 - [MySQL 分析记录](mysql/README.md)：记录我基于清洗长表完成建表、导入、质量检查、排名、趋势、分组、相关性和异常诊断的 SQL。
+- [分析结论汇总](docs/conclusions.md)：集中说明主要发现、可能原因、业务建议和分析边界。
 
 ## 运行方式
 
