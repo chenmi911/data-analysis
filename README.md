@@ -8,9 +8,9 @@
 ![Beginner Friendly](https://img.shields.io/badge/Beginner--Friendly-Code%20Walkthrough-6A5ACD)
 [![CodeTriage](https://img.shields.io/badge/CodeTriage-open%20source%20helpers-2ea44f)](https://www.codetriage.com/chenmi911/data-analysis)
 
-该 repo 用来记录我的数据分析学习项目。当前整理的是 World Happiness Report 项目，重点记录从原始 CSV 到清洗表、SQL 分析、图表和结论的完整过程。
+该 repo 用来记录我的数据分析学习项目。当前整理了 World Happiness Report 和 Superstore 两个项目，重点记录从原始 CSV 到清洗表、SQL 分析、图表和结论的完整过程。
 
-这个项目的分工是：Python 处理原始数据里的字段不统一、缺失、跨年合并等脏数据问题；MySQL 基于清洗后的标准表做数据质量检查、排名、趋势、分组、变化和相关性分析；Python 再输出图表素材。
+当前项目分工是：Python 负责数据读取、字段清洗、日期处理、异常检查和清洗表输出；MySQL 基于清洗后的标准表做经营指标、排名、趋势、分组、折扣影响和客户分层分析。
 
 ## wish
 
@@ -40,6 +40,7 @@
 | 主题 | 处理方式 | 技术栈 | 项目入口 | 数据 |
 |---|---|---|---|---|
 | World Happiness Report 幸福指数分析 | Python 清洗脏数据 + MySQL 分析 + matplotlib 可视化 + 结论输出 | Python + pandas + MySQL + matplotlib | [项目说明](projects/world-happiness-report/README.md) / [代码讲解](projects/world-happiness-report/docs/code_walkthrough.md) / [MySQL 分析](projects/world-happiness-report/mysql/README.md) | [raw csv](projects/world-happiness-report/data/raw) |
+| Superstore 零售经营分析 | pandas 清洗订单明细 + MySQL 经营分析 + RFM 客户分层 + 结论输出 | Python + pandas + MySQL + SQL 窗口函数 | [项目说明](projects/superstore-business-analysis/README.md) / [SQL 分析](projects/superstore-business-analysis/sql/superstore_mysql_analysis.sql) / [结论文档](projects/superstore-business-analysis/docs/superstore_findings.md) | [clean csv](projects/superstore-business-analysis/data/superstore_orders_clean.csv) |
 
 ## current project
 
@@ -59,6 +60,24 @@
 * [分析过程说明](projects/world-happiness-report/docs/analysis_process.md)
 * [Python 代码逐段讲解](projects/world-happiness-report/docs/code_walkthrough.md)
 * [MySQL 分析记录](projects/world-happiness-report/mysql/README.md)
+
+### Superstore 零售经营分析
+
+业务场景：模拟零售电商经营分析，基于订单明细回答销售、利润、折扣、区域、品类和客户价值问题。
+
+分析目标：
+
+* 公司整体销售额、利润和利润率表现如何？
+* 利润问题主要集中在哪些区域、品类和子品类？
+* 高折扣是否导致亏损，哪些品类风险最高？
+* 哪些客户贡献利润，哪些客户高消费但低利润？
+* 如何用 RFM 将客户分为高价值、重点发展、流失风险等类型？
+
+学习文档：
+
+* [项目说明](projects/superstore-business-analysis/README.md)
+* [MySQL 分析 SQL](projects/superstore-business-analysis/sql/superstore_mysql_analysis.sql)
+* [经营分析结论](projects/superstore-business-analysis/docs/superstore_findings.md)
 
 ## preview
 
@@ -95,9 +114,16 @@ python projects/world-happiness-report/run_all.py
 * 相关性结果表
 * 4 张可视化图表
 
+Superstore 项目运行：
+
+```powershell
+python projects/superstore-business-analysis/src/analysis_superstore.py
+mysql --local-infile=1 -uroot -p --execute="source projects/superstore-business-analysis/sql/superstore_mysql_analysis.sql"
+```
+
 ## skills
 
-`Python` `pandas` `matplotlib` `MySQL` `SQL` `EDA` `data cleaning` `data visualization` `business analytics` `portfolio project` `CSV analysis` `correlation analysis` `trend analysis` `data storytelling`
+`Python` `pandas` `matplotlib` `MySQL` `SQL` `EDA` `data cleaning` `data visualization` `business analytics` `portfolio project` `CSV analysis` `correlation analysis` `trend analysis` `retail analytics` `RFM analysis` `customer segmentation` `data storytelling`
 
 ## recommended topics
 
@@ -116,6 +142,10 @@ business-analytics
 analytics-portfolio
 portfolio-project
 world-happiness-report
+superstore
+retail-analytics
+rfm-analysis
+customer-segmentation
 csv-analysis
 data-cleaning
 data-storytelling
