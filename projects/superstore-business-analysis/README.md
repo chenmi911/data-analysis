@@ -15,6 +15,13 @@ D:\temp\dataset\superstore\Sample - Superstore.csv
 
 该 CSV 需要使用 `cp1252` 编码读取。
 
+## 学习文档
+
+- [分析过程说明](docs/analysis_process.md)：解释为什么这样清洗、为什么这样写 SQL、RFM 口径和业务分析顺序。
+- [代码逐段讲解](docs/code_walkthrough.md)：记录 Python 清洗、MySQL 分析和 RFM 分层的具体实现逻辑。
+- [经营分析结论](docs/conclusions.md)：集中说明主要发现、数据证据、业务建议和分析边界。
+- [MySQL 分析 SQL](sql/superstore_mysql_analysis.sql)：建表、导入、经营总览、折扣分析和 RFM 客户分层。
+
 ## 运行方式
 
 第一步：运行 Python，只生成清洗后的 CSV。
@@ -40,4 +47,6 @@ mysql -uroot -p --execute="SET GLOBAL local_infile = 1"
 - `data/superstore_orders_clean.csv`
 - `data/superstore_rejected_rows.csv`
 - `sql/superstore_mysql_analysis.sql`
-- `docs/superstore_findings.md`
+- `docs/analysis_process.md`
+- `docs/code_walkthrough.md`
+- `docs/conclusions.md`

@@ -40,7 +40,7 @@
 | 主题 | 处理方式 | 技术栈 | 项目入口 | 数据 |
 |---|---|---|---|---|
 | World Happiness Report 幸福指数分析 | Python 清洗脏数据 + MySQL 分析 + matplotlib 可视化 + 结论输出 | Python + pandas + MySQL + matplotlib | [项目说明](projects/world-happiness-report/README.md) / [结论汇总](projects/world-happiness-report/docs/conclusions.md) / [代码讲解](projects/world-happiness-report/docs/code_walkthrough.md) / [MySQL 分析](projects/world-happiness-report/mysql/README.md) | [raw csv](projects/world-happiness-report/data/raw) |
-| Superstore 零售经营分析 | pandas 清洗订单明细 + MySQL 经营分析 + RFM 客户分层 + 结论输出 | Python + pandas + MySQL + SQL 窗口函数 | [项目说明](projects/superstore-business-analysis/README.md) / [SQL 分析](projects/superstore-business-analysis/sql/superstore_mysql_analysis.sql) / [结论文档](projects/superstore-business-analysis/docs/superstore_findings.md) | [clean csv](projects/superstore-business-analysis/data/superstore_orders_clean.csv) |
+| Superstore 零售经营分析 | pandas 清洗订单明细 + MySQL 经营分析 + RFM 客户分层 + 结论输出 | Python + pandas + MySQL + SQL 窗口函数 | [项目说明](projects/superstore-business-analysis/README.md) / [过程说明](projects/superstore-business-analysis/docs/analysis_process.md) / [代码讲解](projects/superstore-business-analysis/docs/code_walkthrough.md) / [SQL 分析](projects/superstore-business-analysis/sql/superstore_mysql_analysis.sql) / [结论文档](projects/superstore-business-analysis/docs/conclusions.md) | [clean csv](projects/superstore-business-analysis/data/superstore_orders_clean.csv) |
 
 ## current project
 
@@ -77,8 +77,10 @@
 学习文档：
 
 * [项目说明](projects/superstore-business-analysis/README.md)
+* [分析过程说明](projects/superstore-business-analysis/docs/analysis_process.md)
+* [Python 与 SQL 代码逐段讲解](projects/superstore-business-analysis/docs/code_walkthrough.md)
 * [MySQL 分析 SQL](projects/superstore-business-analysis/sql/superstore_mysql_analysis.sql)
-* [经营分析结论](projects/superstore-business-analysis/docs/superstore_findings.md)
+* [经营分析结论](projects/superstore-business-analysis/docs/conclusions.md)
 
 ## preview
 
