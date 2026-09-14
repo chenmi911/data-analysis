@@ -1,10 +1,3 @@
--- Cookie Cats A/B 测试 MySQL 练习 SQL
---
--- 运行方式:
--- mysql --local-infile=1 -uroot -p --execute="source projects/cookie-cats-ab-test/sql/cookie_cats_mysql_ab_test.sql"
---
--- 如果 LOAD DATA LOCAL INFILE 被禁用，需要先在 MySQL 客户端和服务端开启 local_infile。
-
 CREATE DATABASE IF NOT EXISTS cookie_cats_ab_test DEFAULT CHARACTER SET utf8mb4;
 USE cookie_cats_ab_test;
 
@@ -59,7 +52,7 @@ SELECT
     MAX(sum_gamerounds) AS max_sum_gamerounds
 FROM cookie_cats;
 
--- 1. 实验分组是否接近均衡
+-- 1. 实验分组比例
 SELECT
     version,
     COUNT(*) AS users,
@@ -68,7 +61,7 @@ FROM cookie_cats
 GROUP BY version
 ORDER BY version;
 
--- 2. 留存率概览
+-- 2. 留存率
 SELECT
     version,
     COUNT(*) AS users,
@@ -79,9 +72,7 @@ GROUP BY version
 ORDER BY version;
 
 -- 3. A/B 留存比例检验
--- 把整段检验做成视图 v_retention_ab_test，供第 6 节"决策证据汇总"复用，
--- 避免两处各写一套 p 值近似代码，保证单一事实来源。
--- p 值使用标准正态 CDF 的 Abramowitz-Stegun 近似，适合本练习判断显著性。
+
 CREATE OR REPLACE VIEW v_retention_ab_test AS
 WITH metric_long AS (
     SELECT 'retention_1' AS metric, version, retention_1 AS retained
@@ -175,7 +166,6 @@ SELECT
     ROUND(absolute_diff_treatment_minus_control + 1.96 * ci_se, 6) AS ci95_high
 FROM p_value_calc;
 
--- 3b. 打印留存检验明细（即视图内容；视图内不做 ORDER BY，行序在查询时控制）
 SELECT * FROM v_retention_ab_test ORDER BY metric;
 
 -- 4. 游戏局数描述统计
@@ -224,7 +214,7 @@ JOIN percentiles p
     ON s.version = p.version
 ORDER BY s.version;
 
--- 5. 游戏局数均值差异。注意: sum_gamerounds 长尾明显，本结果只作辅助参考。
+-- 5. 游戏局数均值差异
 WITH group_mean AS (
     SELECT
         version,
@@ -238,19 +228,7 @@ SELECT
         AS treatment_minus_control_mean_gamerounds
 FROM group_mean;
 
--- 6. 面向业务决策：证据汇总（SQL 只给证据，判断由人结合业务上下文完成）
---
--- 为什么这里不再写"一句话硬结论"：
--- 单看一个留存的点估计并套 if-else，并不是业务判断。真实的推广决策
--- 至少要同时核对四个方面，再把它们放到文档里做权衡：
---   1) 主指标(7 日留存)：效应方向、p 值、95% CI 是否完全为正/负；
---   2) 一致性：辅助指标(1 日留存)与主指标的方向是否一致、是否显著；
---   3) 活跃度：游戏局数分位数是否提供了能"抵消"留存损失的证据；
---   4) 口径：全体样本(ITT)是因果解读的主口径；以"是否到达各自门槛"
---      切子集会因后处理选择偏差而误导（详见文档），故不作为结论依据。
--- 下面 6a-6c 只输出这三个维度的证据与"单指标门槛标记"。
-
--- 6a. 留存维度证据（直接读视图，指标值由 0/1 留存字段求均值得到）
+-- 6. 业务决策
 SELECT
     metric,
     control_n,
@@ -272,7 +250,6 @@ SELECT
 FROM v_retention_ab_test
 ORDER BY metric;
 
--- 6b. 活跃度维度证据（游戏局数长尾，主看分位数差；均值仅作参考）
 WITH ordered AS (
     SELECT
         version,
@@ -303,9 +280,6 @@ SELECT
         - MAX(CASE WHEN version = 'gate_30' THEN p99 END) AS p99_diff_rounds
 FROM grp;
 
--- 6c. 口径提醒：打到各自门槛的玩家占比
--- 提示解读全体均值时要谨慎：多数人在前 14 天根本没碰到关卡门槛，
--- 门槛位置并不影响这些人，却被计入全体分母。
 SELECT
     version,
     COUNT(*) AS users,
