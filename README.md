@@ -34,14 +34,6 @@
 
 结论：`gate_40` 的 7 日留存较 `gate_30` 显著下降 **0.82 个百分点**（约 -4.3%，p≈0.0016，95% CI [-1.33, -0.31] 个百分点），折算本批实验组约少 370 名第 7 天留存用户；辅助指标方向同负或无差异。按既定决策规则**建议不推广第 40 关方案**，并给出补充商业化数据后的下一步实验设计。
 
-学习文档：
-
-* [项目说明](projects/cookie-cats-ab-test/README.md)
-* [业务分析报告](projects/cookie-cats-ab-test/docs/analysis_report.md)
-* [MySQL 分析 SQL](projects/cookie-cats-ab-test/sql/cookie_cats_mysql_ab_test.sql)
-* [Python脚本](projects/cookie-cats-ab-test/python/cookie_cats_ab_test_python_commented.py)
-* [简历项目](projects/cookie-cats-ab-test/docs/resume_project_summary.md)
-
 ### Superstore 零售经营分析
 
 业务场景：模拟零售电商经营分析，基于订单明细回答销售、利润、折扣、区域、品类和客户价值问题。
@@ -53,11 +45,3 @@
 * 高折扣是否导致亏损，哪些品类风险最高？
 * 哪些客户贡献利润，哪些客户高消费但低利润？
 * 如何用 RFM 将客户分为高价值、重点发展、流失风险等类型？
-
-学习文档：
-
-* [项目说明](projects/superstore-business-analysis/README.md)
-* [分析过程说明](projects/superstore-business-analysis/docs/analysis_process.md)
-* [Python 与 SQL ](projects/superstore-business-analysis/docs/code_walkthrough.md)
-* [MySQL 分析 SQL](projects/superstore-business-analysis/sql/superstore_mysql_analysis.sql)
-* [经营分析结论](projects/superstore-business-analysis/docs/conclusions.md)
