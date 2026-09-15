@@ -36,11 +36,11 @@
 
 学习文档：
 
-* [项目说明（Why / STAR / 复现）](projects/cookie-cats-ab-test/README.md)
-* [业务分析报告（含决策论证与下一步实验）](projects/cookie-cats-ab-test/docs/analysis_report.md)
+* [项目说明](projects/cookie-cats-ab-test/README.md)
+* [业务分析报告](projects/cookie-cats-ab-test/docs/analysis_report.md)
 * [MySQL 分析 SQL](projects/cookie-cats-ab-test/sql/cookie_cats_mysql_ab_test.sql)
-* [Python 复核脚本（分步注释版）](projects/cookie-cats-ab-test/python/cookie_cats_ab_test_python_commented.py)
-* [简历项目表述](projects/cookie-cats-ab-test/docs/resume_project_summary.md)
+* [Python脚本](projects/cookie-cats-ab-test/python/cookie_cats_ab_test_python_commented.py)
+* [简历项目](projects/cookie-cats-ab-test/docs/resume_project_summary.md)
 
 ### Superstore 零售经营分析
 
@@ -58,7 +58,7 @@
 
 * [项目说明](projects/superstore-business-analysis/README.md)
 * [分析过程说明](projects/superstore-business-analysis/docs/analysis_process.md)
-* [Python 与 SQL 代码逐段讲解](projects/superstore-business-analysis/docs/code_walkthrough.md)
+* [Python 与 SQL ](projects/superstore-business-analysis/docs/code_walkthrough.md)
 * [MySQL 分析 SQL](projects/superstore-business-analysis/sql/superstore_mysql_analysis.sql)
 * [经营分析结论](projects/superstore-business-analysis/docs/conclusions.md)
 
