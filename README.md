@@ -13,20 +13,9 @@
 - **Cookie Cats 手游 A/B 测试（最新）**：围绕真实业务决策——"是否把首个等待门槛从第 30 关后移到第 40 关"，用 90,189 名玩家的随机分流数据做因果判断。
 - **Superstore 零售经营分析**：原始订单数据到清洗表、SQL 经营分析、图表和结论的完整常规业务分析工作流，覆盖指标口径、分组对比、折扣影响、客户分层。
 
-## tip
-
-* 当前项目使用 Python、pandas、MySQL 和 matplotlib；A/B 测试项目使用 MySQL 8 + SQL 窗口函数做检验，并用 pandas 分步脚本复核。
-* 我保留了原始数据、清洗后数据、Python 脚本、MySQL 脚本、图表输出和过程说明。
-* 项目重点不是堆方法，而是把数据清洗、指标口径、分析过程和结论边界讲清楚。
-* AB 测试项目会解释统计口径：主指标前置的决策规则、多重指标一致性、ITT 主口径与后处理选择偏差、实际意义换算，而不是用单个 p 值拍板。
-* CodeTriage 官方动态徽章需要仓库先被 CodeTriage 收录；当前可先使用顶部入口 badge，收录后替换为：
-
 ```text
 [![Open Source Helpers](https://www.codetriage.com/chenmi911/data-analysis/badges/users.svg)](https://www.codetriage.com/chenmi911/data-analysis)
 ```
-
-> 数据分析项目最重要的不是"图多"，而是每一步都能回答一个明确问题：为什么要处理这个字段、为什么这样分组、这个图支撑什么结论、结论能不能落地。
-
 ## list
 
 | 主题 | 处理方式 | 技术栈 | 项目入口 | 数据 |
