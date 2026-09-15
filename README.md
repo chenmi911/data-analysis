@@ -13,9 +13,6 @@
 - **Cookie Cats 手游 A/B 测试（最新）**：围绕真实业务决策——"是否把首个等待门槛从第 30 关后移到第 40 关"，用 90,189 名玩家的随机分流数据做因果判断。
 - **Superstore 零售经营分析**：原始订单数据到清洗表、SQL 经营分析、图表和结论的完整常规业务分析工作流，覆盖指标口径、分组对比、折扣影响、客户分层。
 
-```text
-[![Open Source Helpers](https://www.codetriage.com/chenmi911/data-analysis/badges/users.svg)](https://www.codetriage.com/chenmi911/data-analysis)
-```
 ## list
 
 | 主题 | 处理方式 | 技术栈 | 项目入口 | 数据 |
@@ -29,15 +26,13 @@
 
 业务场景：免费消除手游 Cookie Cats 用"等待门槛"（能量/时间墙）控制节奏。产品团队想知道把首个门槛从第 30 关**后移到第 40 关**能否让玩家先养成习惯再撞墙——但也可能只是白白折损留存。两种假设都成立，只能靠随机实验区分因果效应与人群体质差异。
 
-决策规则（分析前定好，避免事后找理由）：主指标 7 日留存前置；只有主指标未显著受损、且辅助指标无负向信号，才值得继续评估推广。
-
 核心分析判断：
 
 * 主指标 **7 日留存** 用双比例 Z 检验 + 95% CI 判断（样本 9 万人，但 1pp 量级差异仍在随机波动内，不能用点估计拍板）。
 * 辅助指标 **1 日留存** 与 **前 14 天游戏局数**（长尾分布，以 P50–P99 分位数看）做一致性参照，防"留存没变但玩得更少"被漏掉。
 * 识别**选择偏差陷阱**：62.7% / 69.6% 玩家从未触达各自门槛；若只看"到达者"，结论会反转成后移更好，这是后处理变量导致的假象，故以**全体样本（ITT）**为主口径。
 
-量化结论：`gate_40` 的 7 日留存较 `gate_30` 显著下降 **0.82 个百分点**（约 -4.3%，p≈0.0016，95% CI [-1.33, -0.31] 个百分点），折算本批实验组约少 370 名第 7 天留存用户；辅助指标方向同负或无差异。按既定决策规则**建议不推广第 40 关方案**，并给出补充商业化数据后的下一步实验设计。
+结论：`gate_40` 的 7 日留存较 `gate_30` 显著下降 **0.82 个百分点**（约 -4.3%，p≈0.0016，95% CI [-1.33, -0.31] 个百分点），折算本批实验组约少 370 名第 7 天留存用户；辅助指标方向同负或无差异。按既定决策规则**建议不推广第 40 关方案**，并给出补充商业化数据后的下一步实验设计。
 
 学习文档：
 
@@ -66,53 +61,6 @@
 * [Python 与 SQL 代码逐段讲解](projects/superstore-business-analysis/docs/code_walkthrough.md)
 * [MySQL 分析 SQL](projects/superstore-business-analysis/sql/superstore_mysql_analysis.sql)
 * [经营分析结论](projects/superstore-business-analysis/docs/conclusions.md)
-
-## quick start
-
-```powershell
-pip install -r requirements.txt
-
-# Cookie Cats A/B 测试：用 Python 分步复核报告中的统计结果（需先按项目说明下载 cookie_cats.csv 到 data/raw/）
-python projects/cookie-cats-ab-test/python/cookie_cats_ab_test_python_commented.py
-# 或用 MySQL 跑整条 SQL 链路（数据同样需先放入 data/raw/）
-mysql --local-infile=1 -uroot -p --execute="source projects/cookie-cats-ab-test/sql/cookie_cats_mysql_ab_test.sql"
-
-# Superstore 零售经营分析
-python projects/superstore-business-analysis/src/analysis_superstore.py
-mysql --local-infile=1 -uroot -p --execute="source projects/superstore-business-analysis/sql/superstore_mysql_analysis.sql"
-```
-
-## skills
-
-`Python` `pandas` `MySQL` `SQL` `A/B testing` `hypothesis testing` `Z-test` `confidence interval` `retention analysis` `EDA` `data cleaning` `business analytics` `portfolio project` `retail analytics` `RFM analysis` `customer segmentation` `data storytelling`
-
-## recommended topics
-
-当前仓库使用的 GitHub About topics：
-
-```text
-python
-pandas
-mysql
-sql
-data-analysis
-ab-testing
-hypothesis-testing
-retention-analysis
-product-analytics
-exploratory-data-analysis
-business-analytics
-analytics-portfolio
-portfolio-project
-superstore
-retail-analytics
-rfm-analysis
-customer-segmentation
-data-cleaning
-data-storytelling
-beginner-friendly
-open-data
-```
 
 ## stats
 
