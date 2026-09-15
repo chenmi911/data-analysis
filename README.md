@@ -10,7 +10,7 @@
 [![CodeTriage](https://img.shields.io/badge/CodeTriage-open%20source%20helpers-2ea44f)](https://www.codetriage.com/chenmi911/data-analysis)
 
 
-- **Cookie Cats 手游 A/B 测试（最新）**：围绕真实业务决策——"是否把首个等待门槛从第 30 关后移到第 40 关"，用 90,189 名玩家的随机分流数据做因果判断。
+- **Cookie Cats 手游 A/B 测试**：围绕真实业务决策——"是否把首个等待门槛从第 30 关后移到第 40 关"，用 90,189 名玩家的随机分流数据做因果判断。
 - **Superstore 零售经营分析**：原始订单数据到清洗表、SQL 经营分析、图表和结论的完整常规业务分析工作流，覆盖指标口径、分组对比、折扣影响、客户分层。
 
 ## list
