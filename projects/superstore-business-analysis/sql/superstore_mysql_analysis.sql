@@ -1,10 +1,3 @@
--- Superstore MySQL 练习 SQL
--- 先运行 Python:
--- python projects/superstore-business-analysis/src/analysis_superstore.py
---
--- 再用 MySQL 客户端运行本文件:
--- mysql --local-infile=1 -uroot -p --execute="source projects/superstore-business-analysis/sql/superstore_mysql_analysis.sql"
-
 CREATE DATABASE IF NOT EXISTS practice DEFAULT CHARACTER SET utf8mb4;
 USE practice;
 
