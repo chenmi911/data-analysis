@@ -61,17 +61,3 @@
 * [Python 与 SQL ](projects/superstore-business-analysis/docs/code_walkthrough.md)
 * [MySQL 分析 SQL](projects/superstore-business-analysis/sql/superstore_mysql_analysis.sql)
 * [经营分析结论](projects/superstore-business-analysis/docs/conclusions.md)
-
-## stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=chenmi911&show_icons=true)
-
-## refer
-
-> 1. [pandas documentation](https://pandas.pydata.org/docs/)
-> 2. [MySQL documentation](https://dev.mysql.com/doc/)
-> 3. [GitHub repository style reference: TurboWay/bigdata_analyse](https://github.com/TurboWay/bigdata_analyse)
-
-## license
-
-Code and documents in this repository are released under the MIT License. Raw datasets keep their original data source licenses and terms.
