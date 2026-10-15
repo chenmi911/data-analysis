@@ -5,46 +5,9 @@
 - pandas：只读取原始 CSV、清洗字段、处理日期、导出干净 CSV。
 - MySQL：建表、导入 CSV、完成年度/月度经营总览、区域与品类诊断、折扣影响分析。
 
-## 数据源
-
-将原始文件放在 `data/raw/Sample - Superstore.csv`：
-
-```text
-projects/superstore-business-analysis/data/raw/Sample - Superstore.csv
-```
-
-该 CSV 需要使用 `cp1252` 编码读取。
-
-## 运行方式
-
-第一步：放入原始 CSV 后运行 Python，生成清洗后的 CSV。
-
-```powershell
-python projects/superstore-business-analysis/analysis_superstore.py
-```
-
-第二步：运行 SQL，导入 MySQL 并分析。
-
-```powershell
-mysql --local-infile=1 -uroot -p --execute="source projects/superstore-business-analysis/superstore_mysql_analysis.sql"
-```
-
-如果 MySQL 提示 `Loading local data is disabled`，先用 root 执行：
-
-```powershell
-mysql -uroot -p --execute="SET GLOBAL local_infile = 1"
-```
-
-## 输出
-
-- `data/superstore_orders_clean.csv`
-- `data/superstore_rejected_rows.csv`
-- `superstore_mysql_analysis.sql`
-
-
 ## 数据来源
 
-数据集为 Kaggle [Superstore Dataset](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)，原始文件名为 `Sample - Superstore.csv`。
+数据集为https://www.kaggle.com/code/rawanma7moud/superstore/input
 
 # Superstore 经营分析结论
 
