@@ -40,7 +40,6 @@ mysql -uroot -p --execute="SET GLOBAL local_infile = 1"
 - `data/superstore_orders_clean.csv`
 - `data/superstore_rejected_rows.csv`
 - `superstore_mysql_analysis.sql`
-- `docs/conclusions.md`
 
 
 ## 数据来源
