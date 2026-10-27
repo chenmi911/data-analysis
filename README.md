@@ -1,6 +1,6 @@
 # 数据分析项目集
 
-每个项目目录以分析说明和 Python 文件为主；只有项目原本包含 SQL 分析时才保留 SQL 文件。项目组织参考 [TurboWay/bigdata_analyse](https://github.com/TurboWay/bigdata_analyse/tree/main/AgeOfBarbarians) 的单项目布局。
+每个项目目录以分析说明和 Python 文件为主；只有项目原本包含 SQL 分析时才保留 SQL 文件。
 
 ## 项目
 
